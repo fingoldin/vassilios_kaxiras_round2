@@ -372,6 +372,7 @@ function startEdit() {
 }
 
 function saveEdit() {
+  console.log("SAve");
   $.post("/save_progress", window.progressDataEditing, () => {
     $("#progress-wrap").html("");
     $("#edit-button").show();
@@ -402,9 +403,9 @@ window.onload = (e) => {
   }
   $.get("/check_logged", (res) => {
     console.log("Logged: " + res);
-    window.editing = (res == "true");
+    window.editing = false;
     loadProgress();
-    if(window.editing) {
+    if(res == "true") {
       $("#edit-buttons").show();
       $("#edit-save").click(saveEdit);
       $("#edit-cancel").click(saveCancel);

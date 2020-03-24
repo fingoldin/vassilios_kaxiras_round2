@@ -100,11 +100,13 @@ client.connect().then(() => {
 
       progress.remove({}, (err) => {
         if(err) return res.status(500).send("Failed");
-        if(req.body.items.length) {
+        if(req.body.items && req.body.items.length) {
           edit_item(req.body.items, 0, progress, (err) => {
             if(err) return res.status(500).send("Failed");
             res.send("success");
           });
+        } else {
+          res.send("success");
         }
       });
     });
