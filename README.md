@@ -23,4 +23,5 @@ In addition, link throughout the website (including social media, and emails) ha
 ### Editing
 
 The progress page is where admins would edit the progress bars and items, using a built-in inline editing interface. To access this, click 'Login' (a little link found at the very bottom of each page on the website), and login using your admin credentials. It will automatically redirect you to the progress bars page, where an option to edit the content will pop up. Proceed to click that button and make your changes, and then press 'Save changes' to apply them.
+To make change, simply click on the add or remove buttons, or click on existing blocks of text or progress bar values to edit them.
 
